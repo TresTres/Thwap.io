@@ -20,8 +20,9 @@ app.get('/', (req, res) => {
 Sio.on("connection", socket => {
     Sio.emit("position", pos);
 });
-*/
+
 
 Http.listen(3000, () => {
     console.log("listening at 3000")
-});
+});*/
+app.listen(3000, () => console.log('Running on port 3000'))
