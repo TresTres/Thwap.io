@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/ec20user/node
+    destination: /home/ec2-user/node
 hooks:
   BeforeInstall:
     - location: scripts/install.sh

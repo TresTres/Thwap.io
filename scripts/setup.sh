@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-cd /home/ec20user/node
+cd /home/ec2-user/node
 npm install
