@@ -13,7 +13,7 @@ deploy:
       local_dir: dpl_cd_upload
       skip_cleanup: true
       on: &2
-        repo: trestres/Thwap.io
+        repo: TresTres/Thwap.io
       bucket: thwap-code-bucket
       region: us-east-2
     - provider: codedeploy
