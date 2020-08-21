@@ -13,7 +13,7 @@ var pos = {
 var app = Express();
 
 app.get('/', (req, res) => {
-    res.send('auto restart from pm2')
+    res.send('auto restart from pm2 success')
 })
 
 /*
