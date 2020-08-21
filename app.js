@@ -16,10 +16,11 @@ app.get('/', (req, res) => {
     res.send('success')
 })
 
-
+/*
 Sio.on("connection", socket => {
     Sio.emit("position", pos);
 });
+*/
 
 Http.listen(3000, () => {
     console.log("listening at 3000")
