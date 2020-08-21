@@ -4,7 +4,10 @@ module.exports = {
     script: 'app.js',
     instances: 'max',
     max_memory_restart: '256M',
-    watch: true,
+    watch: '.',
+    ignore_watch: [
+      "node_modules"
+    ],
     env: {
       NODE_ENV: 'development'
     },
