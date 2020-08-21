@@ -12,6 +12,10 @@ var pos = {
 
 var app = Express();
 
+app.get('/', (req, res) => {
+    res.send('success')
+})
+
 
 Sio.on("connection", socket => {
     Sio.emit("position", pos);
