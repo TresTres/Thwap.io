@@ -13,7 +13,7 @@ var pos = {
 var app = Express();
 
 app.get('/', (req, res) => {
-    res.send('deployment test')
+    res.send('deployment test with rollbacks')
 })
 
 /*
