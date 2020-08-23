@@ -1,7 +1,7 @@
 #! /bin/bash
 
 #if this is not a pull request and it's to master
-if [-z "$TRAVIS_PULL_REQUEST"] || [ "$TRAVIS_PULL_REQUEST" == "false"]; then
+if [ -z "$TRAVIS_PULL_REQUEST" ] || [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
     if [ "$TRAVIS_BRANCH" == "master" ]; then
 
 
