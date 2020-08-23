@@ -14,7 +14,8 @@ var app = Express();
 
 app.get('/', (req, res) => {
     res.send('using docker containers and travis')
-})
+});
+
 
 /*
 Sio.on("connection", socket => {
