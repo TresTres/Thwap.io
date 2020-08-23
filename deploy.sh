@@ -21,7 +21,7 @@ if [ -z "$TRAVIS_PULL_REQUEST" ] || [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
             sudo tee -a /usr/bin/ecs-deploy
         sudo chmod +x /usr/bin/ecs-deploy
         ecs-deploy -c $AWS_CLUSTER_NAME -n $AWS_SERVICE_NAME \
-            -i "$AWS_ACCT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/thwap-image:latest" -t 240
+            -i "$AWS_ACCT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/thwap-image:latest" -r $AWS_REGION -t 240
         echo "Deploy successful"
     fi
 fi
