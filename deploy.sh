@@ -10,7 +10,7 @@ if [ -z "$TRAVIS_PULL_REQUEST" ] || [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
         docker --version
         pip install --user awscli   
         export PATH=$PATH:$HOME/.local/bin     
-        eval $(aws ecr get-login-password --region $AWS_REGION)
+        aws ecr get-login-password --region $AWS_REGION | docker login -u AWS --password-stdin "$AWS_ACCT_ID.dkr.ecr.$AWS_REGION.amazonaws.com"
         docker-compose build
         docker tag "trestres/thwap.io:latest" "$AWS_ACCT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/thwap-image:latest"
         docker push "$AWS_ACCT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/thwap-image:latest"
