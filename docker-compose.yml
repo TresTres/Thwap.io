@@ -1,0 +1,10 @@
+version: '2'
+services:
+    web: 
+        build:
+            context: .
+        volumes: 
+            - .:/code
+        ports: 
+            - "3000:3000"
+        image: trestres/thwap.io

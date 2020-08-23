@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -16,7 +16,9 @@
     "url": "https://github.com/TresTres/Thwap.io/issues"
   },
   "homepage": "https://github.com/TresTres/Thwap.io#readme",
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
   "dependencies": {
     "express": "^4.17.1",
     "socket.io": "^2.3.0"
